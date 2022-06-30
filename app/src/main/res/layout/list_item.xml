@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--CardView卡片式布局 简单的FrameLayout 额外提供了圆角和阴影效果 具有立体感觉-->
+
+    <androidx.cardview.widget.CardView
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#ffffffff"
+    android:padding="4dp" android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_item"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/name_item"/>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
